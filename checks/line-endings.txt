@@ -1,0 +1,2 @@
+This file checks line endings.
+If git converts it to Windows line endings, the setup check says so.

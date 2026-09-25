@@ -23,6 +23,8 @@ services:
     environment:
       DATABASE_URL: postgresql://preflight:preflight@db:5432/preflight
       NPM_CONFIG_UPDATE_NOTIFIER: "false"
+      # The host folder the check is run from; unset in PowerShell and cmd.
+      HOST_PWD: ${PWD:-}
     # Nothing listens on these; publishing them checks they're free.
     ports:
       - "${API_PORT:-3001}:3001"

@@ -1,4 +1,3 @@
 node_modules/
-.preflight/
-*.log
+.probe
 .DS_Store
